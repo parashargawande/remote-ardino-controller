@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_alignParentEnd="true" android:layout_alignParentRight="true" android:layout_alignParentTop="true" android:id="@+id/editText"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:id="@+id/buttonStart"
+        android:onClick="onClickStart" android:layout_below="@+id/editText" android:text="Begin"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/buttonSend"
+        android:onClick="onClickSend" android:layout_below="@+id/editText" android:text="Send" android:layout_toEndOf="@+id/buttonStart" android:layout_toRightOf="@+id/buttonStart"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:maxLines="4"
+        android:text="hello"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="bottom"
+        android:layout_alignParentEnd="true" />
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/buttonStop" android:onClick="onClickStop" android:layout_below="@+id/editText" android:text="Stop" android:layout_toEndOf="@+id/buttonSend" android:layout_toRightOf="@+id/buttonSend"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/buttonClear" android:onClick="onClickClear" android:layout_below="@+id/editText" android:text="Clear" android:layout_toEndOf="@+id/buttonStop" android:layout_toRightOf="@+id/buttonStop"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Server Started"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/buttonStart"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hvvhv"
+        android:maxLines="3"
+        android:gravity="bottom"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+    </TextView>
+</RelativeLayout>
